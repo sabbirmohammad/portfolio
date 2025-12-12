@@ -71,6 +71,11 @@ body {
     padding: 100px 0;
 }
 
+/* Ensure anchors don't hide under fixed navbar */
+section {
+    scroll-margin-top: 100px;
+}
+
 h1,
 h2,
 h3,
@@ -667,6 +672,11 @@ footer {
     .skill-card:hover {
         transform: translateY(-5px);
     }
+
+    /* Reduce anchor offset on smaller screens */
+    section {
+        scroll-margin-top: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -698,6 +708,11 @@ footer {
         /* Further reduced padding */
         gap: 2rem;
         /* Further reduced gap */
+    }
+
+    /* Tighten anchor offset further for very small screens */
+    section {
+        scroll-margin-top: 70px;
     }
 }
 
