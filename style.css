@@ -656,6 +656,8 @@ footer {
     .contact-wrapper {
         grid-template-columns: 1fr;
         padding: 2rem;
+        gap: 3rem;
+        /* Reduced gap from implicit 4rem */
     }
 
     .social-links-contact {
@@ -689,5 +691,12 @@ footer {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .contact-wrapper {
+        padding: 1.5rem;
+        /* Further reduced padding */
+        gap: 2rem;
+        /* Further reduced gap */
     }
 }
