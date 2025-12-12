@@ -700,3 +700,16 @@ footer {
         /* Further reduced gap */
     }
 }
+
+/* Optimize for touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+
+    * {
+        cursor: auto !important;
+    }
+}
